@@ -1,7 +1,7 @@
 .intro {
    color: #ffffff;
    background-color: #61c4d9;
-   background-image: url('./../../images/pattern.png');
+   background-image: url('./../images/pattern.png');
    background-repeat: no-repeat;
    background-position: bottom right;
    background-size: contain;
@@ -11,14 +11,14 @@
    position: relative;
 
    &:before {
-      content: url('../../images/berries.png');
+      content: url('../images/berries.png');
       position: absolute;
       bottom: -50px;
       right: -14px;
    }
 
    &:after {
-      content: url('../../images/leaves.png');
+      content: url('../images/leaves.png');
       position: absolute;
       bottom: -58px;
       right: -88px;

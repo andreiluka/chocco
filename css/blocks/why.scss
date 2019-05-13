@@ -1,16 +1,17 @@
 .why {
-   background-image: url('./../../images/bg-why.png');
+   background-image: url('./../images/bg-why.png');
    background-position:  center left;
    background-repeat: no-repeat;
    position: relative;
 
    &:before {
-      content: url('../../images/razz.png');
+      content: url('../images/razz.png');
       position: absolute;
       bottom: -119px;
       left: 0;
    }
 }
+
 
 .why__text {
    margin: 0 auto 57px;

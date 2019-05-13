@@ -4,14 +4,14 @@
    position: relative;
 
    &:before {
-      content: url('../../images/berries-review_top.png');
+      content: url('../images/berries-review_top.png');
       position: absolute;
       top: 19px;
       right: 3px;
    }
 
    &:after {
-      content: url('../../images/berries-review_bottom.png');
+      content: url('../images/berries-review_bottom.png');
       position: absolute;
       bottom: -128px;
       left: -80px;

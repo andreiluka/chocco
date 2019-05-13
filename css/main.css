@@ -1,6 +1,5 @@
 @import url(./layout/normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,500,500i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext");
-@import url(/css/blocks/pagination.css);
 body {
   font-size: 16px;
   line-height: 1.42;
@@ -86,7 +85,7 @@ footer {
 .intro {
   color: #ffffff;
   background-color: #61c4d9;
-  background-image: url("./../../images/pattern.png");
+  background-image: url("./../images/pattern.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain; }
@@ -94,12 +93,12 @@ footer {
 .container--intro {
   position: relative; }
   .container--intro:before {
-    content: url("../../images/berries.png");
+    content: url("../images/berries.png");
     position: absolute;
     bottom: -50px;
     right: -14px; }
   .container--intro:after {
-    content: url("../../images/leaves.png");
+    content: url("../images/leaves.png");
     position: absolute;
     bottom: -58px;
     right: -88px; }
@@ -312,12 +311,12 @@ footer {
     border: 1px solid #0f5a47; }
 
 .why {
-  background-image: url("./../../images/bg-why.png");
+  background-image: url("./../images/bg-why.png");
   background-position: center left;
   background-repeat: no-repeat;
   position: relative; }
   .why:before {
-    content: url("../../images/razz.png");
+    content: url("../images/razz.png");
     position: absolute;
     bottom: -119px;
     left: 0; }
@@ -443,12 +442,12 @@ footer {
   align-items: center;
   position: relative; }
   .container--reviews:before {
-    content: url("../../images/berries-review_top.png");
+    content: url("../images/berries-review_top.png");
     position: absolute;
     top: 19px;
     right: 3px; }
   .container--reviews:after {
-    content: url("../../images/berries-review_bottom.png");
+    content: url("../images/berries-review_bottom.png");
     position: absolute;
     bottom: -128px;
     left: -80px; }
@@ -530,3 +529,34 @@ footer {
   display: block;
   margin: 0 auto;
   width: 100%; }
+
+.pagination {
+  position: fixed;
+  top: 45%;
+  right: 5%; }
+
+.pagination__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: relative; }
+  .pagination__link::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #f2f5f4;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+  .pagination__link:hover {
+    border: 1px solid #ccc; }
+
+.pagination__item--active .pagination__link {
+  border: 1px solid #f2f5f4; }
