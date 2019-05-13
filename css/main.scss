@@ -1,29 +1,26 @@
 
 // layout
-@import "/css/layout/normalize.css";
-@import "/css/layout/layout.css";
-@import "/css/layout/fonts.css";
+@import "./layout/normalize.css";
+@import "./layout/layout.scss";
+@import "./layout/fonts.scss";
 
 // blocks
-@import "/css/blocks/intro.css";
-@import "/css/blocks/header.css";
-@import "/css/blocks/logo.css";
-@import "/css/blocks/nav.css";
-@import "/css/blocks/phone.css";
-@import "/css/blocks/title.css";
-@import "/css/blocks/btn.css";
+@import "./blocks/intro.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/phone.scss";
+@import "./blocks/title.scss";
+@import "./blocks/btn.scss";
 
-@import "/css/blocks/why.css";
-@import "/css/blocks/advantages.css";
+@import "./blocks/why.scss";
+@import "./blocks/advantages.scss";
 
-@import "/css/blocks/reviews.css";
-@import "/css/blocks/review.css";
-@import "/css/blocks/review-list.css";
-
-
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/review-list.scss";
 
 
 
 
-
-@import "/css/blocks/pagination.css";
+@import "/css/blocks/pagination.scss";

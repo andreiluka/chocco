@@ -1,16 +1,532 @@
-@import url(/css/layout/normalize.css);
-@import url(/css/layout/layout.css);
-@import url(/css/layout/fonts.css);
-@import url(/css/blocks/intro.css);
-@import url(/css/blocks/header.css);
-@import url(/css/blocks/logo.css);
-@import url(/css/blocks/nav.css);
-@import url(/css/blocks/phone.css);
-@import url(/css/blocks/title.css);
-@import url(/css/blocks/btn.css);
-@import url(/css/blocks/why.css);
-@import url(/css/blocks/advantages.css);
-@import url(/css/blocks/reviews.css);
-@import url(/css/blocks/review.css);
-@import url(/css/blocks/review-list.css);
+@import url(./layout/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,500,500i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext");
 @import url(/css/blocks/pagination.css);
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; }
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-width: 940px;
+  min-height: 100%; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.container--center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul > li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'museo_sans';
+  src: url("./../../fonts/museosans_500-webfont.woff2") format("woff2"), url("./../../fonts/museosans_500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museo_sans';
+  src: url("./../../fonts/museosans_500_italic-webfont.woff2") format("woff2"), url("./../../fonts/museosans_500_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'museo_sans';
+  src: url("./../../fonts/museosanscyrl_500-webfont.woff2") format("woff2"), url("./../../fonts/museosanscyrl_500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.intro {
+  color: #ffffff;
+  background-color: #61c4d9;
+  background-image: url("./../../images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain; }
+
+.container--intro {
+  position: relative; }
+  .container--intro:before {
+    content: url("../../images/berries.png");
+    position: absolute;
+    bottom: -50px;
+    right: -14px; }
+  .container--intro:after {
+    content: url("../../images/leaves.png");
+    position: absolute;
+    bottom: -58px;
+    right: -88px; }
+
+.intro__content {
+  -webkit-box-flex: 0.9;
+  -ms-flex: 0.9;
+  flex: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.intro__content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.title--intro {
+  width: 410px;
+  margin-bottom: 22px; }
+
+.intro__desc {
+  width: 345px;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 32px; }
+
+.intro__addition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 55px;
+  margin-top: auto; }
+
+.intro__addition-natural {
+  margin-right: 105px;
+  width: 75px;
+  font-weight: 400;
+  position: relative; }
+  .intro__addition-natural:last-child {
+    margin-right: 0; }
+  .intro__addition-natural:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    width: 50px;
+    height: 42px;
+    background: url("../../images/natural.png") center center no-repeat; }
+
+.intro__addition-delivery {
+  margin-right: 105px;
+  width: 75px;
+  font-weight: 400;
+  position: relative; }
+  .intro__addition-delivery:last-child {
+    margin-right: 0; }
+  .intro__addition-delivery:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    width: 50px;
+    height: 42px;
+    background: url("../../images/delivery.png") center center no-repeat; }
+
+.intro__addition-shape {
+  margin-right: 105px;
+  width: 75px;
+  font-weight: 400;
+  position: relative; }
+  .intro__addition-shape:last-child {
+    margin-right: 0; }
+  .intro__addition-shape:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    width: 50px;
+    height: 42px;
+    background: url("../../images/shape.png") center center no-repeat; }
+
+.intro__content-pic {
+  position: absolute;
+  top: -5%;
+  right: -5%; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-bottom: 66px; }
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.logo {
+  display: block;
+  width: 53px;
+  height: 38px;
+  color: #ffffff;
+  font-family: "museo_sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__item {
+  margin-right: 30px; }
+  .nav__item:last-child {
+    margin-right: 0px; }
+
+.nav__link {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .nav__link:hover {
+    color: black; }
+
+.phone {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  margin-left: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .phone:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 12px;
+    height: 11px;
+    background: url("../../images/phone.png"); }
+  .phone:hover {
+    color: black; }
+
+.title {
+  font-family: "Alegreya Sans";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase; }
+
+.btn {
+  display: inline-block;
+  color: #0f5a47;
+  border: 1px solid #fff;
+  font-family: "Alegreya Sans";
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 16px 34px;
+  margin-bottom: 68px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .btn:hover {
+    border: 1px solid #0f5a47; }
+
+.why {
+  background-image: url("./../../images/bg-why.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  position: relative; }
+  .why:before {
+    content: url("../../images/razz.png");
+    position: absolute;
+    bottom: -119px;
+    left: 0; }
+
+.why__text {
+  margin: 0 auto 57px;
+  text-align: center; }
+
+.title--why {
+  color: #0d0d0d;
+  font-size: 48px;
+  margin-bottom: 8px; }
+
+.why__text-desc {
+  width: 410px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400; }
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -47px; }
+  .advantages__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3 - $marleft);
+    margin-left: 47px;
+    position: relative; }
+    .advantages__item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 52px;
+      left: -60px;
+      width: 67px;
+      height: 21px;
+      background-image: url("../../images/advantages-design.png"); }
+    .advantages__item:first-child:after {
+      display: none; }
+
+.advantages__pic--helpful {
+  display: block;
+  width: 125px;
+  height: 125px;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  position: relative; }
+  .advantages__pic--helpful:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    width: 75px;
+    height: 69px;
+    background: url("../../images/icons/helpful.svg") center center no-repeat; }
+
+.advantages__pic--tasty {
+  display: block;
+  width: 125px;
+  height: 125px;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  position: relative; }
+  .advantages__pic--tasty:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    width: 75px;
+    height: 69px;
+    background: url("../../images/icons/tasty.svg") center center no-repeat; }
+
+.advantages__pic--nutritionally {
+  display: block;
+  width: 125px;
+  height: 125px;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  position: relative; }
+  .advantages__pic--nutritionally:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    width: 75px;
+    height: 69px;
+    background: url("../../images/icons/nutritionally.svg") center center no-repeat; }
+
+.advantages__title {
+  color: #000000;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.advantages__desc {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300; }
+
+.container--reviews {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .container--reviews:before {
+    content: url("../../images/berries-review_top.png");
+    position: absolute;
+    top: 19px;
+    right: 3px; }
+  .container--reviews:after {
+    content: url("../../images/berries-review_bottom.png");
+    position: absolute;
+    bottom: -128px;
+    left: -80px; }
+
+.title--reviews {
+  color: #0d0d0d;
+  font-size: 48px;
+  margin-bottom: 59px; }
+
+.review__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8faf9;
+  padding: 51px 180px 40px 45px;
+  position: relative;
+  color: #666666;
+  font-size: 18px;
+  margin-bottom: 47px; }
+  .review__block:before {
+    content: url("../../images/berries-gray.png");
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.review__photo {
+  width: 254px;
+  height: 260px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 20px; }
+
+.review__title {
+  color: #323232;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 24px; }
+
+.review__text {
+  margin-bottom: 25px; }
+
+.review__author {
+  font-weight: 500; }
+
+.review-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.review-list__item {
+  margin-right: 32px; }
+  .review-list__item:last-child {
+    margin-right: 0; }
+
+.review-list__pic {
+  overflow: hidden;
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  border: 8px solid #ffffff; }
+
+.review-list__pic--active {
+  border: 8px solid #0f5a47; }
+
+.review-list__pic-brunette {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+.review-list__pic-redhead {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+.review-list__pic-guy {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
