@@ -1,0 +1,92 @@
+.intro {
+   color: #ffffff;
+   background-color: #61c4d9;
+   background-image: url('./../../images/pattern.png');
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   background-size: contain;
+}
+
+.container--intro {
+   position: relative;
+
+   &:before {
+      content: url('../../images/berries.png');
+      position: absolute;
+      bottom: -50px;
+      right: -14px;
+   }
+
+   &:after {
+      content: url('../../images/leaves.png');
+      position: absolute;
+      bottom: -58px;
+      right: -88px;
+   }
+}
+
+
+
+.intro__content {
+   flex: 0.9;
+   display: flex;
+   position: relative;
+}
+
+.intro__content-text {
+   display: flex;
+   flex-direction: column;
+   // justify-content: center;
+   align-items: flex-start;
+}
+
+.title--intro {
+   width: 410px;
+   margin-bottom: 22px;
+}
+
+.intro__desc {
+   width: 345px;
+   font-size: 21px;
+   font-weight: 400;
+   margin-bottom: 32px;
+}
+
+.intro__addition {
+   display: flex;
+   font-size: 16px;
+   font-weight: 400;
+   margin-left: 55px;
+   margin-top: auto;
+}
+
+@each $add in (natural, delivery, shape) {
+   .intro__addition-#{$add} {
+      margin-right: 105px;
+      width: 75px;
+      font-weight: 400;
+      position: relative;
+
+      &:last-child {
+         margin-right: 0;
+      }
+      
+      &:before {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 0px;
+         left: -55px;
+         width: 50px;
+         height: 42px;
+         background: url('../../images/#{$add}.png') center center no-repeat;
+      }
+
+   }
+}
+
+.intro__content-pic {
+   position: absolute;
+   top: -5%;
+   right: -5%;
+}

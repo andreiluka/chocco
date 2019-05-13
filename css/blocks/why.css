@@ -1,0 +1,25 @@
+.why {
+  background-image: url("./../../images/bg-why.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  position: relative; }
+  .why:before {
+    content: url("../../images/razz.png");
+    position: absolute;
+    bottom: -119px;
+    left: 0; }
+
+.why__text {
+  margin: 0 auto 57px;
+  text-align: center; }
+
+.title--why {
+  color: #0d0d0d;
+  font-size: 48px;
+  margin-bottom: 8px; }
+
+.why__text-desc {
+  width: 410px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400; }

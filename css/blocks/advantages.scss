@@ -1,0 +1,71 @@
+$marleft: 47px;
+
+
+.advantages {
+   display: flex;
+   margin-left: -$marleft;
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: calc(100% / 3 - $marleft);
+      margin-left: $marleft;
+      position: relative;
+      
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 52px;
+         left: -60px;
+         width: 67px;
+         height: 21px;
+         background-image: url('../../images/advantages-design.png');         
+      }
+
+      &:first-child:after {
+         display: none;
+      }
+   }
+}
+
+
+
+@each $advico in (helpful, tasty, nutritionally) {
+   .advantages__pic--#{$advico} {
+      display: block;
+      width: 125px;
+      height: 125px;
+      background-color: #f2f5f4;
+      border-radius: 50%;
+      margin-bottom: 35px;
+      position: relative;
+      
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 27px;
+         left: 26px;
+         width: 75px;
+         height: 69px;
+         background: url('../../images/icons/#{$advico}.svg') center center no-repeat;
+      }
+      
+   }
+}
+
+.advantages__title {
+   color: #000000;
+   font-size: 27px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.advantages__desc {
+   color: #666666;
+   font-size: 18px;
+   font-weight: 300;
+}
