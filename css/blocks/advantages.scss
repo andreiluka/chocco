@@ -22,7 +22,7 @@ $marleft: 47px;
          left: -60px;
          width: 67px;
          height: 21px;
-         background-image: url('../../images/advantages-design.png');         
+         background-image: url('../images/advantages-design.png');         
       }
 
       &:first-child:after {
@@ -51,7 +51,7 @@ $marleft: 47px;
          left: 26px;
          width: 75px;
          height: 69px;
-         background: url('../../images/icons/#{$advico}.svg') center center no-repeat;
+         background: url('../images/icons/#{$advico}.svg') center center no-repeat;
       }
       
    }
