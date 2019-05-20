@@ -4,7 +4,7 @@
 }
 
 .review-list__item {
-   margin-right: 32px;
+   margin-right: 29px;
 
    &:last-child {
       margin-right: 0;
@@ -13,8 +13,8 @@
 
 .review-list__pic {
    overflow: hidden;
-   width: 102px;
-   height: 102px;
+   width: 105px;
+   height: 105px;
    border-radius: 50%;
    border: 8px solid #ffffff;
 }
@@ -28,8 +28,6 @@
       display: block;
       margin: 0 auto;
       width: 100%;
-      // height: 100%;
-      // vertical-align: middle;
    }
 }
 

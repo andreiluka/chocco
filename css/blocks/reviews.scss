@@ -1,3 +1,14 @@
+.reviews {
+   position: relative;
+
+   &:before {
+      content: url('../images/pattern-reviwe.png');
+      position: absolute;
+      bottom: -146px;
+      left: 0;
+   }
+}
+
 .container--reviews {
    justify-content: center;
    align-items: center;
@@ -6,8 +17,8 @@
    &:before {
       content: url('../images/berries-review_top.png');
       position: absolute;
-      top: 19px;
-      right: 3px;
+      top: -71px;
+      right: -78px;
    }
 
    &:after {
@@ -21,7 +32,7 @@
 .title--reviews {
    color: #0d0d0d;
    font-size: 48px;
-   margin-bottom: 59px;
+   margin-bottom: 46px;
 }
 
 

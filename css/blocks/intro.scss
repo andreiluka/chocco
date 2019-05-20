@@ -13,15 +13,15 @@
    &:before {
       content: url('../images/berries.png');
       position: absolute;
-      bottom: -50px;
-      right: -14px;
+      bottom: -47px;
+      right: 8px;
    }
 
    &:after {
       content: url('../images/leaves.png');
       position: absolute;
       bottom: -58px;
-      right: -88px;
+      right: -67px;
    }
 }
 
@@ -42,14 +42,15 @@
 
 .title--intro {
    width: 410px;
-   margin-bottom: 22px;
+   margin-bottom: 10px;
+   line-height: 60px;
 }
 
 .intro__desc {
    width: 345px;
    font-size: 21px;
    font-weight: 400;
-   margin-bottom: 32px;
+   margin-bottom: 31px;
 }
 
 .intro__addition {
@@ -62,13 +63,14 @@
 
 @each $add in (natural, delivery, shape) {
    .intro__addition-#{$add} {
-      margin-right: 105px;
+      margin-right: 116px;
       width: 75px;
       font-weight: 400;
       position: relative;
 
       &:last-child {
          margin-right: 0;
+         margin-left: -35px;
       }
       
       &:before {
@@ -87,6 +89,6 @@
 
 .intro__content-pic {
    position: absolute;
-   top: -5%;
-   right: -5%;
+   top: -97px;
+   right: -6%;
 }

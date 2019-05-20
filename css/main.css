@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,500,500i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext");
 body {
   font-size: 16px;
-  line-height: 1.42;
   margin: 0;
   padding: 0;
   font-family: "Alegreya Sans", Arial, sans-serif;
@@ -95,13 +94,13 @@ footer {
   .container--intro:before {
     content: url("../images/berries.png");
     position: absolute;
-    bottom: -50px;
-    right: -14px; }
+    bottom: -47px;
+    right: 8px; }
   .container--intro:after {
     content: url("../images/leaves.png");
     position: absolute;
     bottom: -58px;
-    right: -88px; }
+    right: -67px; }
 
 .intro__content {
   -webkit-box-flex: 0.9;
@@ -126,13 +125,14 @@ footer {
 
 .title--intro {
   width: 410px;
-  margin-bottom: 22px; }
+  margin-bottom: 10px;
+  line-height: 60px; }
 
 .intro__desc {
   width: 345px;
   font-size: 21px;
   font-weight: 400;
-  margin-bottom: 32px; }
+  margin-bottom: 31px; }
 
 .intro__addition {
   display: -webkit-box;
@@ -144,12 +144,13 @@ footer {
   margin-top: auto; }
 
 .intro__addition-natural {
-  margin-right: 105px;
+  margin-right: 116px;
   width: 75px;
   font-weight: 400;
   position: relative; }
   .intro__addition-natural:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: -35px; }
   .intro__addition-natural:before {
     content: '';
     display: block;
@@ -161,12 +162,13 @@ footer {
     background: url("../images/natural.png") center center no-repeat; }
 
 .intro__addition-delivery {
-  margin-right: 105px;
+  margin-right: 116px;
   width: 75px;
   font-weight: 400;
   position: relative; }
   .intro__addition-delivery:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: -35px; }
   .intro__addition-delivery:before {
     content: '';
     display: block;
@@ -178,12 +180,13 @@ footer {
     background: url("../images/delivery.png") center center no-repeat; }
 
 .intro__addition-shape {
-  margin-right: 105px;
+  margin-right: 116px;
   width: 75px;
   font-weight: 400;
   position: relative; }
   .intro__addition-shape:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: -35px; }
   .intro__addition-shape:before {
     content: '';
     display: block;
@@ -196,8 +199,8 @@ footer {
 
 .intro__content-pic {
   position: absolute;
-  top: -5%;
-  right: -5%; }
+  top: -97px;
+  right: -6%; }
 
 .header {
   display: -webkit-box;
@@ -209,8 +212,8 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 24px 0;
-  margin-bottom: 66px; }
+  padding: 27px 0;
+  margin-bottom: 62px; }
 
 .header__buttons {
   display: -webkit-box;
@@ -231,7 +234,7 @@ footer {
   font-family: "museo_sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 20px;
   text-transform: uppercase; }
 
 .nav__list {
@@ -288,7 +291,6 @@ footer {
   font-family: "Alegreya Sans";
   font-size: 60px;
   font-weight: 700;
-  line-height: 60px;
   text-transform: uppercase; }
 
 .btn {
@@ -303,7 +305,7 @@ footer {
   background-color: #ffffff;
   border-radius: 40px;
   padding: 16px 34px;
-  margin-bottom: 68px;
+  margin-bottom: 71px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s; }
@@ -322,7 +324,7 @@ footer {
     left: 0; }
 
 .why__text {
-  margin: 0 auto 57px;
+  margin: -29px auto 57px;
   text-align: center; }
 
 .title--why {
@@ -374,7 +376,7 @@ footer {
   height: 125px;
   background-color: #f2f5f4;
   border-radius: 50%;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   position: relative; }
   .advantages__pic--helpful:after {
     content: '';
@@ -392,7 +394,7 @@ footer {
   height: 125px;
   background-color: #f2f5f4;
   border-radius: 50%;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   position: relative; }
   .advantages__pic--tasty:after {
     content: '';
@@ -410,7 +412,7 @@ footer {
   height: 125px;
   background-color: #f2f5f4;
   border-radius: 50%;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   position: relative; }
   .advantages__pic--nutritionally:after {
     content: '';
@@ -433,6 +435,14 @@ footer {
   font-size: 18px;
   font-weight: 300; }
 
+.reviews {
+  position: relative; }
+  .reviews:before {
+    content: url("../images/pattern-reviwe.png");
+    position: absolute;
+    bottom: -146px;
+    left: 0; }
+
 .container--reviews {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -444,8 +454,8 @@ footer {
   .container--reviews:before {
     content: url("../images/berries-review_top.png");
     position: absolute;
-    top: 19px;
-    right: 3px; }
+    top: -71px;
+    right: -78px; }
   .container--reviews:after {
     content: url("../images/berries-review_bottom.png");
     position: absolute;
@@ -455,7 +465,7 @@ footer {
 .title--reviews {
   color: #0d0d0d;
   font-size: 48px;
-  margin-bottom: 59px; }
+  margin-bottom: 46px; }
 
 .review__block {
   display: -webkit-box;
@@ -486,8 +496,11 @@ footer {
   font-weight: 500;
   margin-bottom: 24px; }
 
+.review__desc {
+  padding-top: 11px; }
+
 .review__text {
-  margin-bottom: 25px; }
+  margin-bottom: 36px; }
 
 .review__author {
   font-weight: 500; }
@@ -501,14 +514,14 @@ footer {
   justify-content: center; }
 
 .review-list__item {
-  margin-right: 32px; }
+  margin-right: 29px; }
   .review-list__item:last-child {
     margin-right: 0; }
 
 .review-list__pic {
   overflow: hidden;
-  width: 102px;
-  height: 102px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   border: 8px solid #ffffff; }
 
@@ -530,17 +543,126 @@ footer {
   margin: 0 auto;
   width: 100%; }
 
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 26px 0 20px; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.contacts__addres {
+  color: #010101;
+  font-size: 21px;
+  line-height: 23.82px; }
+
+.contacts__phone {
+  color: #0f5a47;
+  font-style: 21px; }
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.socials__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 23px;
+  height: 20px; }
+  .socials__item:last-child {
+    margin-right: 0; }
+
+.socials__link--vk {
+  width: 23px;
+  height: 20px;
+  background: url("./../../images/vk.png") center center no-repeat; }
+
+.socials__link--vk:hover {
+  background: url("./../../images/vk_hover.png") center center no-repeat;
+  background-color: black;
+  border-radius: 2px; }
+
+.socials__link--fb {
+  width: 23px;
+  height: 20px;
+  background: url("./../../images/fb.png") center center no-repeat; }
+
+.socials__link--fb:hover {
+  background: url("./../../images/fb_hover.png") center center no-repeat;
+  background-color: black;
+  border-radius: 2px; }
+
+.socials__link--inst {
+  width: 23px;
+  height: 20px;
+  background: url("./../../images/inst.png") center center no-repeat; }
+
+.socials__link--inst:hover {
+  background: url("./../../images/inst_hover.png") center center no-repeat;
+  background-color: black;
+  border-radius: 2px; }
+
+.socials__link--twitter {
+  width: 23px;
+  height: 20px;
+  background: url("./../../images/twitter.png") center center no-repeat; }
+
+.socials__link--twitter:hover {
+  background: url("./../../images/twitter_hover.png") center center no-repeat;
+  background-color: black;
+  border-radius: 2px; }
+
 .pagination {
   position: fixed;
-  top: 45%;
-  right: 5%; }
+  top: 32.8%;
+  right: 46px; }
 
 .pagination__link {
   display: block;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   position: relative; }
   .pagination__link::after {
     content: '';

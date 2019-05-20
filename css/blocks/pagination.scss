@@ -1,7 +1,7 @@
 .pagination {
    position: fixed;
-   top: 45%;
-   right: 5%;
+   top: 32.8%;
+   right: 46px;
 }
 
 .pagination__link {
@@ -9,7 +9,7 @@
    width: 16px;
    height: 16px;
    border-radius: 50%;
-   margin-bottom: 15px;
+   margin-bottom: 5px;
    position: relative;
 
    &::after {

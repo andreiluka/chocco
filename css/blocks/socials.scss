@@ -1,0 +1,33 @@
+.socials {
+   display: flex;
+   align-items: center;
+}
+
+.socials__item {
+   display: inline-flex;
+   margin-right: 15px;
+   justify-content: center;
+   align-items: center;
+   width: 23px;
+   height: 20px;
+
+   &:last-child {
+      margin-right: 0;
+   }
+}
+
+
+@each $social in (vk, fb, inst, twitter) {
+
+   .socials__link--#{$social} {
+      width: 23px;
+      height: 20px;
+      background: url('./../../images/#{$social}.png') center center no-repeat;
+   }
+
+   .socials__link--#{$social}:hover {
+      background: url('./../../images/#{$social}_hover.png') center center no-repeat;
+      background-color: black;
+      border-radius: 2px;
+   }
+}
