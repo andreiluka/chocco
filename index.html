@@ -147,8 +147,77 @@
          </div>
       </section>
 
+      <section class="section form" id="form_7">
+         <div class="container container--center">
+            <h2 class="title title--form">закажите доставку</h2>
+            <form action="#" class="form__tag">
+               <div class="form__column">
+                  <div class="form__row">
+                     <label class="form__block">
+                        <div class="form__block-name">Имя</div>
+                        <input type="text" class="form__input">
+                     </label>
+                     <label class="form__block">
+                        <div class="form__block-name">Телефон</div>
+                        <input type="text" class="form__input">
+                     </label>
+                  </div>
+                  <div class="form__row">
+                     <label class="form__block">
+                        <div class="form__block-name">Улица</div>
+                        <input type="text" class="form__input">
+                     </label>                  
+                  </div>
+                  <div class="form__row">
+                     <label class="form__block">
+                        <div class="form__block-name">Дом</div>
+                        <input type="text" class="form__input">
+                     </label>
+                     <label class="form__block">
+                        <div class="form__block-name">Корпус</div>
+                        <input type="text" class="form__input">
+                     </label>
+                     <label class="form__block">
+                        <div class="form__block-name">Квартира</div>
+                        <input type="text" class="form__input">
+                     </label>
+                     <label class="form__block">
+                        <div class="form__block-name">Этаж</div>
+                        <input type="text" class="form__input">
+                     </label>
+                  </div>
+               </div>
+               <div class="form__column">
+                  <div class="form__row">
+                     <label class="form__block">
+                        <div class="form__block-name">Коментарий</div>
+                        <textarea name="comments" class="form__textarea form__input"></textarea>
+                     </label>
+                  </div>
+                  <div class="form__row">
+                     <label class="form__radio-lbl" tabindex="0">
+                        <input type="radio" class="form__radio" value="yes" name="cash" checked>
+                        <span class="form__radio-custom"></span>
+                        <span class="form__radio-text">Потребуется сдача</span>
+                     </label>
+                     <label class="form__radio-lbl" tabindex="0">
+                        <input type="radio" class="form__radio" value="no" name="cash">
+                        <span class="form__radio-custom"></span>
+                        <span class="form__radio-text">Оплата по карте</span>
+                     </label>                
+                  </div>
+                  <div class="form__row">
+                     <button type="submit" class="form__button-submit btn">заказать</button>
+                     <button type="reset" class="form__button-reset">Очистить</button>                     
+                  </div>
+               </div>
+            </form>
+         </div>
+      </section>
+
       <section class="section map" id="map_8">
-            <img src="./images/bg-map.png" alt="карта москвы" class="map__img">
+         <!-- <img src="./images/bg-map.png" alt="карта москвы" class="map__img"> -->
+         <div class="map__img"></div>
          <div class="container container--map">
             <!-- <img src="./images/bg-map.png" alt="карта москвы" class="map__img"> -->
             <footer class="footer">
@@ -194,7 +263,7 @@
             <a href="#" class="pagination__link"></a>
          </li>
          <li class="pagination__item">
-            <a href="#" class="pagination__link"></a>
+            <a href="#form_7" class="pagination__link"></a>
          </li>
          <li class="pagination__item">
             <a href="#map_8" class="pagination__link"></a>
