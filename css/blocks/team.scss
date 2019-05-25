@@ -1,0 +1,17 @@
+.team {
+   position: relative;
+
+   &:before {
+      content: url('../images/pattern-team.png');
+      position: absolute;
+      top: -47px;
+      right: 0px;
+   }
+}
+
+.title--team {
+   color: #0d0d0d;
+   font-size: 48px;
+   margin-bottom: 48px;
+}
+

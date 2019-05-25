@@ -7,9 +7,20 @@
    color: #010101;
    font-size: 21px;
    line-height: 23.82px;
-   }
+}
 
 .contacts__phone {
    color: #0f5a47;
-   font-style: 21px;
+   position: relative;
+
+   &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: -18px;
+      width: 12px;
+      height: 11px;
+      background: url('../images/phone-footer.png');
+   }
 }

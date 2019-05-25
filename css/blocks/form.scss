@@ -2,7 +2,35 @@
    background-image: url('./../images/bg-form.png');
    color: #0f5a47;
    position: relative;
+
+   &:before {
+      content: url('../images/blackberry.png');
+      position: absolute;
+      top: -137px;
+      right: 0px;
+   }
 }
+
+.container--form {
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+   &:before {
+      content: url('../images/berries-form.png');
+      position: absolute;
+      bottom: 57px;
+      left: -63px;
+   }
+
+   &:after {
+      content: url('../images/leaves-form.png');
+      position: absolute;
+      bottom: 108px;
+      right: -77px;
+   }
+}
+
 
 .title--form {
    font-size: 48px;
@@ -49,7 +77,7 @@
 .form__textarea {
    resize: none;
    min-height: 180px;
-   margin-bottom: 4px;
+   margin-bottom: 6px;
 }
 
 .form__row--wrap {

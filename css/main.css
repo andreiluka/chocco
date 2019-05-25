@@ -445,6 +445,19 @@ footer {
   font-size: 18px;
   font-weight: 300; }
 
+.team {
+  position: relative; }
+  .team:before {
+    content: url("../images/pattern-team.png");
+    position: absolute;
+    top: -47px;
+    right: 0px; }
+
+.title--team {
+  color: #0d0d0d;
+  font-size: 48px;
+  margin-bottom: 48px; }
+
 .reviews {
   position: relative; }
   .reviews:before {
@@ -557,6 +570,30 @@ footer {
   background-image: url("./../images/bg-form.png");
   color: #0f5a47;
   position: relative; }
+  .form:before {
+    content: url("../images/blackberry.png");
+    position: absolute;
+    top: -137px;
+    right: 0px; }
+
+.container--form {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .container--form:before {
+    content: url("../images/berries-form.png");
+    position: absolute;
+    bottom: 57px;
+    left: -63px; }
+  .container--form:after {
+    content: url("../images/leaves-form.png");
+    position: absolute;
+    bottom: 108px;
+    right: -77px; }
 
 .title--form {
   font-size: 48px;
@@ -603,7 +640,7 @@ footer {
 .form__textarea {
   resize: none;
   min-height: 180px;
-  margin-bottom: 4px; }
+  margin-bottom: 6px; }
 
 .form__row--wrap {
   -ms-flex-wrap: wrap;
@@ -762,7 +799,16 @@ footer {
 
 .contacts__phone {
   color: #0f5a47;
-  font-style: 21px; }
+  position: relative; }
+  .contacts__phone:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    width: 12px;
+    height: 11px;
+    background: url("../images/phone-footer.png"); }
 
 .socials {
   display: -webkit-box;
