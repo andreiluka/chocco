@@ -194,7 +194,7 @@
                         <textarea name="comments" class="form__textarea form__input"></textarea>
                      </label>
                   </div>
-                  <div class="form__row">
+                  <div class="form__row form__row--wrap">
                      <label class="form__radio-lbl" tabindex="0">
                         <input type="radio" class="form__radio" value="yes" name="cash" checked>
                         <span class="form__radio-custom"></span>
@@ -204,10 +204,15 @@
                         <input type="radio" class="form__radio" value="no" name="cash">
                         <span class="form__radio-custom"></span>
                         <span class="form__radio-text">Оплата по карте</span>
-                     </label>                
+                     </label>
+                     <label class="form__checkbox-lbl" tabindex="0">
+                        <input type="checkbox" class="form__checkbox">
+                        <span class="form__checkbox-custom"></span>
+                        <span class="form__checkbox-text">Не перезванивать</span>
+                     </label>
                   </div>
                   <div class="form__row">
-                     <button type="submit" class="form__button-submit btn">заказать</button>
+                     <button type="submit" class="form__button-submit btn btn--color">заказать</button>
                      <button type="reset" class="form__button-reset">Очистить</button>                     
                   </div>
                </div>

@@ -1,26 +1,27 @@
 .form {
    background-image: url('./../images/bg-form.png');
-   color: green;
+   color: #0f5a47;
    position: relative;
 }
 
 .title--form {
    font-size: 48px;
-   margin-bottom: 26px;
+   margin-bottom: 54px;
 }
 
 .form__column {
    display: inline-flex;
    flex-direction: column;
-   width: 450px;
+   width: calc(100% / 2 - 10px);
 }
 
 .form__row {
    display: flex;
+   margin-bottom: 12px;
 }
 
 .form__block {
-   margin: 10px;
+   margin-right: 10px;
    flex: 1;
 
    &-name {
@@ -33,23 +34,33 @@
 .form__input {
    width: 100%;
    border: none;
-   font-size: 14px;
+   font-size: 18px;
+   line-height: 30px;
    border-radius: 2px;
    padding: 15px 10px;
    box-sizing: border-box;
+
+   &:focus {
+      border: 3px solid #dde3bd;
+      padding: 12px 7px;
+   }
 }
 
 .form__textarea {
    resize: none;
-   min-height: 168px;
-   margin-bottom: 19px;
+   min-height: 180px;
+   margin-bottom: 4px;
+}
+
+.form__row--wrap {
+   flex-wrap: wrap;
 }
 
 
 .form__radio-lbl {
    display: inline-flex;
    align-items: center;
-   margin: 0 0 20px 10px;
+   margin: 0 23px 8px 0;
 }
 
 .form__radio {
@@ -61,7 +72,6 @@
    width: 25px;
    height: 25px;
    background-color: #fff;
-   border: 1px solid #fff;
    border-radius: 50%;
    margin-right: 5px;
    position: relative;
@@ -69,9 +79,9 @@
    &:after {
       content: '';
       display: block;
-      width: 11px;
-      height: 11px;
-      background-color: #4b73b5;
+      width: 13px;
+      height: 13px;
+      background-color: #0f5a47;
       border-radius: 50%;
       position: absolute;
       top: 0;
@@ -85,4 +95,59 @@
 
 .form__radio:checked + .form__radio-custom:after {
    display: block;
+}
+
+
+.form__checkbox-lbl {
+   display: inline-flex;
+   align-items: center;
+   margin-bottom:  40px;
+}
+
+.form__checkbox {
+   display: none;
+}
+
+.form__checkbox-custom {
+   display: block;
+   width: 25px;
+   height: 25px;
+   background-color: #fff;
+   margin-right: 5px;
+   position: relative;
+
+   &:after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 9px;
+      background-image: url('./../images/tick.png');
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: none;
+   }
+}
+
+.form__checkbox:checked + .form__checkbox-custom:after {
+   display: block;
+}
+
+.form__button-reset {
+   display: inline-block;
+   border: none;
+   background: none;
+   color: #0f5a47;
+   font-family: "Alegreya Sans";
+   font-size: 19px;
+   margin-left: 30px;
+   cursor: pointer;
+   transition: 0.2s;
+
+   &:hover {
+      font-weight: bold;      
+   }
 }
