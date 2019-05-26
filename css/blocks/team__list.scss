@@ -1,0 +1,82 @@
+$teammarleft: 16px;
+
+
+.team__list {
+   display: flex;
+   margin-left: -$teammarleft;
+
+   .team__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: calc(100% / 4 - $teammarleft);
+      margin-left: $teammarleft;
+
+      &:nth-child(even) {
+         margin-top: 55px;
+      }
+   }
+}
+
+
+.team__member-pic {
+   width: 223px;
+   height: 289px;
+   object-fit: cover;
+   margin-bottom: 21px;
+}
+
+.team__member-name {
+   display: inline-flex;
+   font-size: 21px;
+   font-weight: 500;
+   margin-bottom: 9px;
+   position: relative;
+
+   &:after {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 6px;
+      position: absolute;
+      top: 40%;
+      right: -15px;
+      background: url('../images/polygon_down.png') center center no-repeat;
+   }
+}
+
+.team__desc {
+   height: 0;
+   overflow: hidden;
+}
+
+.team__member-prof {
+   font-size: 18px;
+   margin-bottom: 6px;
+}
+
+.team__member-text {
+   color: #666666;
+   font-size: 18px;
+   font-weight: 300;
+}
+
+
+.team__item--active {
+
+   .team__member-name:after {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 6px;
+      position: absolute;
+      top: 40%;
+      right: -15px;
+      background: url('../images/polygon_up.png') center center no-repeat;
+   }
+   
+   .team__desc {
+      height: 100%;
+   }
+}

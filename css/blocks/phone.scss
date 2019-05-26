@@ -13,14 +13,19 @@
       content: '';
       display: block;
       position: absolute;
-      top: 10px;
-      left: -20px;
+      top: 9px;
+      left: -18px;
       width: 12px;
       height: 11px;
       background: url('../images/phone.png');
+      transition: 0.3s;
    }
 
    &:hover {
       color: black;
+
+      &:before {
+         background: url('../images/phone_hover.png');
+      }
    }
 }

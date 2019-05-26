@@ -1,17 +1,17 @@
-$marleft: 47px;
+$advanmarleft: 47px;
 
 
 .advantages {
    display: flex;
-   margin-left: -$marleft;
+   margin-left: -$advanmarleft;
 
    &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: calc(100% / 3 - $marleft);
-      margin-left: $marleft;
+      width: calc(100% / 3 - $advanmarleft);
+      margin-left: $advanmarleft;
       position: relative;
       
       &:after {

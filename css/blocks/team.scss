@@ -4,14 +4,27 @@
    &:before {
       content: url('../images/pattern-team.png');
       position: absolute;
-      top: -47px;
+      top: -238px;
       right: 0px;
+   }
+}
+
+.container--team {
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+   &:before {
+      content: url('../images/berry-team.png');
+      position: absolute;
+      bottom: -44px;
+      left: -46px;
    }
 }
 
 .title--team {
    color: #0d0d0d;
    font-size: 48px;
-   margin-bottom: 48px;
+   margin-bottom: 70px;
 }
 
