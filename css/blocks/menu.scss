@@ -1,0 +1,31 @@
+.menu {
+   background-image: url('./../images/bg-menu.png');
+   background-size: cover;
+   color: #fff;
+}
+
+.conteiner--menu {
+   flex-direction: row;
+   // justify-content: space-between;
+   // margin-right: 0;
+}
+
+.title--menu {
+   margin-top: 10%;
+   font-size: 48px;
+}
+
+.menu__list {
+   display: flex;
+}
+
+.menu__item {
+   display: flex;
+
+   &-name {
+      writing-mode: vertical-rl;
+      // transform: rotate(90deg);
+      // transform-origin: left top 0;
+   }
+}
+

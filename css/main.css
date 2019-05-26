@@ -550,6 +550,35 @@ footer {
 .team__item--active .team__desc {
   height: 100%; }
 
+.menu {
+  background-image: url("./../images/bg-menu.png");
+  background-size: cover;
+  color: #fff; }
+
+.conteiner--menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.title--menu {
+  margin-top: 10%;
+  font-size: 48px; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .menu__item-name {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl; }
+
 .reviews {
   position: relative; }
   .reviews:before {
@@ -569,7 +598,7 @@ footer {
   .container--reviews:before {
     content: url("../images/berries-review_top.png");
     position: absolute;
-    top: -71px;
+    top: 15px;
     right: -78px; }
   .container--reviews:after {
     content: url("../images/berries-review_bottom.png");
