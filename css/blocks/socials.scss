@@ -22,12 +22,12 @@
    .socials__link--#{$social} {
       width: 24px;
       height: 22px;
-      background: url('./../../images/#{$social}.png') center center no-repeat;
+      background: url('./../images/#{$social}.png') center center no-repeat;
       transition: 0.3s;
    }
 
    .socials__link--#{$social}:hover {
-      background: url('./../../images/#{$social}_hover.png') center center no-repeat;
+      background: url('./../images/#{$social}_hover.png') center center no-repeat;
       background-color: black;
       border-radius: 3px;
    }

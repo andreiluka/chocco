@@ -84,6 +84,13 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.menu-accordeon:before, .menu-accordeon:after {
+  content: "";
+  display: table; }
+
+.menu-accordeon:after {
+  clear: both; }
+
 .intro {
   color: #ffffff;
   background-color: #61c4d9;
@@ -293,7 +300,10 @@ footer {
   .phone:hover {
     color: black; }
     .phone:hover:before {
-      background: url("../images/phone_hover.png"); }
+      background: url("../images/phone_hover.png");
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
 
 .title {
   font-family: "Alegreya Sans";
@@ -470,7 +480,8 @@ footer {
     content: url("../images/berry-team.png");
     position: absolute;
     bottom: -44px;
-    left: -46px; }
+    left: -46px;
+    z-index: 10; }
 
 .title--team {
   color: #0d0d0d;
@@ -553,31 +564,101 @@ footer {
 .menu {
   background-image: url("./../images/bg-menu.png");
   background-size: cover;
-  color: #fff; }
-
-.conteiner--menu {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
+  color: #fff;
+  position: relative; }
 
 .title--menu {
-  margin-top: 10%;
-  font-size: 48px; }
+  font-size: 48px;
+  position: absolute;
+  top: 10%;
+  left: 10%; }
 
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.menu-accordeon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
 
-.menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .menu__item-name {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl; }
+.menu-accordeon__item {
+  float: left;
+  height: 100%; }
+
+.menu-accordeon__link {
+  width: 80px;
+  display: block;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+  .menu-accordeon__link--milk {
+    background-image: url("../images/milk.png"); }
+
+.menu-accordeon__link {
+  width: 80px;
+  display: block;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+  .menu-accordeon__link--wberries {
+    background-image: url("../images/wberries.png"); }
+
+.menu-accordeon__link {
+  width: 80px;
+  display: block;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+  .menu-accordeon__link--honey {
+    background-image: url("../images/honey.png"); }
+
+.menu-accordeon__name {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: -40px; }
+
+.menu-accordeon__desc {
+  height: 100%;
+  float: left;
+  background: rgba(0, 0, 0, 0.75);
+  width: 0;
+  overflow: hidden; }
+
+.menu-accordeon__text {
+  font-size: 16px;
+  color: #fff;
+  padding: 55px 130px 10px 30px;
+  width: 100%;
+  line-height: 1.8;
+  display: none; }
+
+.menu-accordeon__item--active .menu-accordeon__desc {
+  width: 530px; }
+
+.menu-accordeon__item--active .menu-accordeon__text {
+  display: block; }
 
 .reviews {
   position: relative; }
@@ -872,7 +953,7 @@ footer {
   align-items: center; }
 
 .map__img {
-  background-image: url("../images/bg-map.png");
+  background-image: url("./../images/bg-map.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -958,52 +1039,52 @@ footer {
 .socials__link--vk {
   width: 24px;
   height: 22px;
-  background: url("./../../images/vk.png") center center no-repeat;
+  background: url("./../images/vk.png") center center no-repeat;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
 
 .socials__link--vk:hover {
-  background: url("./../../images/vk_hover.png") center center no-repeat;
+  background: url("./../images/vk_hover.png") center center no-repeat;
   background-color: black;
   border-radius: 3px; }
 
 .socials__link--fb {
   width: 24px;
   height: 22px;
-  background: url("./../../images/fb.png") center center no-repeat;
+  background: url("./../images/fb.png") center center no-repeat;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
 
 .socials__link--fb:hover {
-  background: url("./../../images/fb_hover.png") center center no-repeat;
+  background: url("./../images/fb_hover.png") center center no-repeat;
   background-color: black;
   border-radius: 3px; }
 
 .socials__link--inst {
   width: 24px;
   height: 22px;
-  background: url("./../../images/inst.png") center center no-repeat;
+  background: url("./../images/inst.png") center center no-repeat;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
 
 .socials__link--inst:hover {
-  background: url("./../../images/inst_hover.png") center center no-repeat;
+  background: url("./../images/inst_hover.png") center center no-repeat;
   background-color: black;
   border-radius: 3px; }
 
 .socials__link--twitter {
   width: 24px;
   height: 22px;
-  background: url("./../../images/twitter.png") center center no-repeat;
+  background: url("./../images/twitter.png") center center no-repeat;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
 
 .socials__link--twitter:hover {
-  background: url("./../../images/twitter_hover.png") center center no-repeat;
+  background: url("./../images/twitter_hover.png") center center no-repeat;
   background-color: black;
   border-radius: 3px; }
 

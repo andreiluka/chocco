@@ -3,6 +3,7 @@
 @import "./layout/normalize.css";
 @import "./layout/layout.scss";
 @import "./layout/fonts.scss";
+@import "./layout/mixins.scss";
 
 // blocks
 @import "./blocks/intro.scss";
@@ -20,14 +21,13 @@
 @import "./blocks/team__list.scss";
 
 @import "./blocks/menu.scss";
+@import "./blocks/menu-accordeon.scss";
 
 @import "./blocks/reviews.scss";
 @import "./blocks/review.scss";
 @import "./blocks/review-list.scss";
 
 @import "./blocks/form.scss";
-
-
 
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
